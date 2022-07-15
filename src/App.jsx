@@ -27,8 +27,8 @@ function App() {
   <Statistics stats={data} />
   <FriendList friends={friends} />
   <TransactionHistory items={transactions} />
-  </>
+</>
   )
 }
 
-export default App;                                                                                                                                                                
+export default App
