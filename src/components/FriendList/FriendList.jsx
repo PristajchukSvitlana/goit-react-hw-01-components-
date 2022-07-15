@@ -5,6 +5,7 @@ import s from './FriendList.module.css';
 
 function FriendList ({ friends }) {
     return  (
+      <div className={s.container}>
     <ul className={s.friends}>
       {friends.length > 0 && 
       friends.map(({ avatar, name, isOnline, id}) => {
@@ -18,6 +19,7 @@ function FriendList ({ friends }) {
         )
     })}
   </ul>
+  </div>
   )
       }
 

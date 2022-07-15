@@ -4,17 +4,14 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-/*.item {
+.container {
   display: flex;
   align-items: center;
-  width: 360px;
-  height: 130px;
   margin-bottom: 15px;
   border: 1px solid #adabab;
   border-radius: 5px;
   box-shadow: 3px 3px 10px 3px #adff2f;
-}*/
+}
 .avatar {
   width: 100px;
   height: 110px;

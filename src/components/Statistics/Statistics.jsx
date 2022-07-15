@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-import randomColor from '../helpers/Random';
+import randomColor from '../../helpers/Random';
 
 
 //const randomColor = () => {

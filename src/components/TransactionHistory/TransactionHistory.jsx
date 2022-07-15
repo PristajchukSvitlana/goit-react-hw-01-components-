@@ -4,6 +4,7 @@ import styles from '../TransactionHistory/TransactionHistory.module.css';
 
 function TransactionHistory ({ items }) {
   return (
+    <div className={styles.wraper}>
   <table className={styles['transaction-history']}>
   <thead className={styles['transaction-head']}>
     <tr>
@@ -23,6 +24,7 @@ function TransactionHistory ({ items }) {
     ))}
   </tbody>
 </table>
+  </div>
   )
 }
 
