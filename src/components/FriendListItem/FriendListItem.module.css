@@ -1,0 +1,29 @@
+.avatar {
+  display: block;
+  padding: 3px;
+  margin: 5px;
+  background-color: #e5d0ee;
+  border-radius: 2px;
+}
+
+.name {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status {
+  display: block;
+  width: 55px;
+  margin: 5px 0 5px 5px;
+  font-size: 30px;
+}
+
+.onLine {
+  color: green;
+}
+
+.ofLine {
+  color: red;
+}

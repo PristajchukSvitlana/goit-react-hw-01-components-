@@ -1,24 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
+import FriendListItem from '../FriendListItem/FriendListItem';
 
 
-function FriendList ({ friends }) {
+
+function FriendList ({ friends = [], friend }) {
     return  (
       <div className={s.container}>
-    <ul className={s.friends}>
+    <ul className={s.friendList}>
       {friends.length > 0 && 
-      friends.map(({ avatar, name, isOnline, id}) => {
-        return (
-          <li key={id}> 
-             <span className="status"></span>
-             <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
-             <p className={s.name}>{name}</p>
-              {isOnline ? <span>{isOnline}</span> : <span>Not available</span>}
-          </li>
+      friends.map(friend => (
+        <li key={friend.id} className={s.item}>
+           <FriendListItem 
+             avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}/>
+        </li>
+      )
+     
         )
-    })}
-  </ul>
+      }
+    
+</ul>
   </div>
   )
       }
@@ -30,6 +34,7 @@ FriendList.protoType = {
   name: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   isOnline: PropTypes.bool.isRequired,
+  friend: PropTypes.string.isRequired
     })
   )
 };
